@@ -1,0 +1,36 @@
+.statistic
+	margin-top: -124px
+	z-index: 10
+	position: relative
+
+
+	&__list
+		display: flex
+		flex-wrap: wrap
+
+	&__item
+		width: calc(100% / 3)
+		color: #fff	
+		background: var(--main-color)
+		padding: 70px
+		transition: box-shadow .4s ease, transform .5s ease
+
+		&:hover
+			box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.25)
+			transform: scale(1.2)
+
+
+	&__label
+		font-size: rem(10)
+		text-transform: uppercase
+		margin-bottom: 5px
+
+	&__num
+		color: var(--second-color)
+		font-size: rem(32)
+		font-weight: 500
+		margin-bottom: 15px
+		line-height: 1
+
+	&__text
+		font-size: rem(16)

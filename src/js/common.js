@@ -48,22 +48,15 @@ document.addEventListener("DOMContentLoaded", e => {
 
 
 
-	if ($(".security-stat__num").length){
-		$(".security-stat__num").countTo();
+	if ($(".statistic__num").length){
+		$(".statistic__num").countTo();
 	}
 
-	// setTimeout(function(){
-		$('.banner-logo').addClass('js__animated')
-
-	// }, 2300)
-
-
-
 	$(window).on('scroll', function(){
-		if ($(".security-stat__num").length)
-			if ($(".security-stat__num").offset().top + 50 <=
+		if ($(".statistic__num").length)
+			if ($(".statistic__num").offset().top + 50 <=
 				$(window).scrollTop() + $(window).height()){
-					$(".security-stat__num:not(.countered)").each((i, el) => {
+					$(".statistic__num:not(.countered)").each((i, el) => {
 						let $this = $(el),
 							speed = 0;
 
