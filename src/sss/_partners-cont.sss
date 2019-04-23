@@ -1,0 +1,51 @@
+.partners
+	&-cont
+		margin: 90px 0 95px
+
+	&-title
+		font-size: rem(24)
+		margin-bottom: 60px
+		display: flex
+		justify-content: space-between
+	&-item
+		&__arrow
+			position: relative
+			display: flex
+			margin-bottom: 30px
+
+			&:before
+				content: ''
+				display: inline-block
+				size: 14px
+				border-radius: 3px
+				background: var(--second-color)
+				z-index: 2
+
+			&:after
+				content: ''
+				display: block
+				width: 90%
+				height: 1px
+				background: linear-gradient(270deg, rgba(255, 255, 255, 0) -6.23%, #E5E5E5 50%)
+				position: absolute
+				top: 50%
+				left: 0
+				z-index: 1
+
+
+		&__title
+			font-size: rem(14)
+
+
+
+	.slick
+		&-arrow
+			&:before
+				border-color: #000
+
+		&-list
+			margin: 0 -20px
+
+		&-slide
+			margin: 0 20px
+

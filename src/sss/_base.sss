@@ -194,27 +194,55 @@ li
 
 
 .btn
-	border-radius: 31px
+	border-radius: 3px
 	padding: 15px 26px 17px
 	line-height: 1
-	color: var(--main-color)
-	background: #fff
+	color: #fff
+	background: var(--second-color)
 	display: inline-block
 	transition: background .3s ease
 	white-space: nowrap
 
 	&:hover, &:focus
-		background: #ec6b65 !important
-		color: #fff !important
+		// background: var(--main-color) !important
+		// color: #fff !important
 
-	&--color
-		background: var(--main-color)
-		color: #fff
+
 
 input
-	&.btn 
+	&.btn
+		text-transform: uppercase
 		border: 0
 
+
+
+
+.slick
+	&-arrow
+		position: relative
+		size: 45px
+		border-radius: 50%
+		background: transparent
+		z-index: 10
+
+		&:before
+
+			content: ''
+			size: 10px
+			display: block
+			transform: rotate(45deg)
+			border-top: 1px solid #fff
+			border-right: 1px solid #fff
+			position: absolute
+			top: calc(50% - 5px)
+			left: calc(50% - 5px)
+
+	&-prev 
+		transform: rotate(180deg)
+		left: 0
+
+	&-next
+		right: 0
 
 @media screen and (max-width: 1300px)
 	

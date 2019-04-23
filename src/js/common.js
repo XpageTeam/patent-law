@@ -95,7 +95,12 @@ document.addEventListener("DOMContentLoaded", e => {
 	})
 
 	
+	$('.accordion__item-top').click(function(){
+		let $this = $(this);
 
+		$this.toggleClass('js__open');
+		$this.siblings('.accordion__item-bot').slideToggle();
+	})
 
 	
 
@@ -105,6 +110,23 @@ document.addEventListener("DOMContentLoaded", e => {
 	$('.burger').click(function(){
 		$('body').toggleClass('js__menu--open');
 	})
+
+	$('.law-practice__slider').slick({
+		infinite: true,
+		slidesToShow: 2,
+		slidesToScroll: 2,
+		appendArrows: $('.law-practice-arrow'),
+	});
+
+	$('.partners-slider').slick({
+		infinite: true,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		appendArrows: $('.partners-arrow'),
+	});
+
+
+	
 
 
 

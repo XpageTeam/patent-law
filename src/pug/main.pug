@@ -56,12 +56,15 @@ html(lang="ru")
 					.wrapper
 						.partners
 							.partners-top
-								.partners-title Партнеры
-								.partners-arrow
+								.partners-title 
+									span Партнеры
+									.partners-arrow
 							.partners-slider
 								- for (let i = 0; i < 2; i++)
 									each title, i in ["АО “Обувная фирма “Юничел”", "Группа компаний “Союзпищепром”", "Кондитерская фабрика”Кременкульская”", "Оружейная фабрика “Арт-грани”"]
 										a(href="#").partners-slide
+											.partners-item__arrow
+												span
 											.partners-item__title=title
 				.advantages
 					.advantages__top

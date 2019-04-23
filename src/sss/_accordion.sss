@@ -12,11 +12,60 @@
 		margin: 0 auto 75px
 
 	&__item
+		border-bottom: 1px solid #E5E5E5
+
 		&-top
 			display: flex 
 			align-items: center
 			padding: 65px 70px 65px 80px
+			cursor: pointer
+
+			&.js__open
+				background: var(--main-color)
+
+				.accordion__item
+					&-arrow
+						background: #132046
+						transform: rotate(180deg)
+
+						&:before
+							border-color: #fff
+
+
+					&-title 
+						color: #fff
+
+		&-bot
+			display: none
+			border-left: 1px solid #E5E5E5
+			border-right: 1px solid #E5E5E5
+
+			.text-page
+				padding: 30px
+				max-width: 950px
 
 		&-title
 			font-size: rem(24)
+			margin-right: 20px
+			transition: color .3s ease
+
+		&-arrow
+			position: relative
+			size: 56px
+			border-radius: 50%
+			background: #F1F1F1
+			margin-left: auto
+			transition: transform .3s ease, background .3s ease
+
+			&:before 
+				content: ''
+				display: block
+				position: absolute
+				top: calc(50% - 4px)
+				left: calc(50% - 4px)
+				size: 8px
+				border-right: 1px solid #000
+				border-bottom: 1px solid #000
+				transform: rotate(45deg)
+
 

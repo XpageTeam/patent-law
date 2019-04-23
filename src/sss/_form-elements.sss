@@ -12,12 +12,6 @@
 		border-radius: 10px
 		background: var(--main-color)
 
-div[class*="big-form"]
-	.fancybox-close-small
-		position: sticky
-		float: right
-		top: 0
-		z-index: 15
 
 .popup-form
 	display: none
@@ -79,56 +73,6 @@ div[class*="big-form"]
 						&-message
 							color: rgba(#000, .5)
 
-div:not([class*="big-form-"])
-
-#form_addServices
-	.forms-wrap
-		display: flex 
-		flex-wrap: wrap
-
-	.forms__input-cont
-		width: calc((100% - 30px * 2) / 2)
-		margin: 0 0 30px 30px
-
-
-.wr-block
-	display: flex 
-	flex-wrap: wrap
-	margin: 0 0 -30px -30px
-
-	&--bottom
-		margin-top: 40px
-
-		a 
-			color: var(--main-color)
-
-	&.clear
-		.title-block
-			display: none
-
-	&:not(:first-child)
-		margin-top: 40px
-
-	.title-block
-		width: 100%
-		margin-bottom: 20px
-		font-size: rem(22)
-		text-align: center
-		text-align: left
-		font-weight: bold
-
-	.forms__input-cont
-		width: calc((100% - 30px * 2) / 2)
-		margin: 0 0 30px 30px
-
-	.title-block, .subtitle
-		margin-left: 30px
-
-	.subtitle
-		margin-bottom: 30px
-
-		&-label
-			margin-top: 20px
 
 .checkbox
 	position: relative
@@ -196,13 +140,21 @@ div[id*="calendar_popup"]
 .forms
 	max-height: calc(100vh - 100px)
 
+	&__bot
+		display: flex
+		margin-top: 50px
+
 	&__submit
-		text-align: center
-		margin: 70px 0 0
+		// text-align: center
+		// margin: 70px 0 0
+		margin-right: 35px
 
 
 	&__req
-		margin: 40px 0 0
+		// margin: 40px 0 0
+		max-width: 320px
+		color: #fff
+		text-align: left
 
 	&__input
 		border: 1px solid transparent
@@ -210,7 +162,6 @@ div[id*="calendar_popup"]
 		height: 67px
 		transition: border-color .3s ease, background-color .3s ease
 		width: 100%
-		background-color: #f8f8f8
 		background-position: right 26px center 
 		background-repeat: no-repeat
 
@@ -302,7 +253,11 @@ div[id*="calendar_popup"]
 
 		&:focus
 			border-color: #eaeaed
-			background-color: transparent
+
+			~ .forms__label
+				color: var(--second-color)
+
+			// background-color: transparent
 
 			&::-webkit-input-placeholder
 				opacity: 1 !important
