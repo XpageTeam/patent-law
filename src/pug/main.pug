@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title Главная
+		include inc/head.pug
+		include inc/css.pug
+	body.main.loading
+		.mobile-menu
+		main#content
+			include inc/header.pug
+			.content
+				.main-banner__cont#1
+					figure
+						img(src="img/main-banner.jpg", alt="")
+					.wrapper
+						.main-banner
+							div
+								.main-banner__title БИОЦЕНТР и ИНВИТРО — <br> квалифицированный подход<br>к улучшению качества<br> Вашей жизни!
+								.main-banner__text Систематические лабораторные исследования текущего состояния вашего<br> организма и выполнение рекомендаций на основе результатов этих исследований<br> помогают Вам прожить долгую<br> и здоровую жизнь.
+							.banner-logo
+								img(src="img/banner-logo.png", alt="")
+								include ../img/banner-logo.svg
+
+				.club-card__cont
+					.wrapper
+						.club-card
+							form(action="")
+								.club-card__title Получите клубную карту <span>БИОЦЕНТР</span>
+								.club-card__text Отправьте заявку, получите клубную карту БОЦЕНТР<sup>*</sup>, дающую<br> дополнительную <span><b>скидку 10%</b></span> на любые исследования и анализы <span><b>ИНВИТРО</b></span>
+								.club-card__middle
+									.club-card__form
+										.club-card__wrap
+											.club-card__input-cont
+												input.club-card-form__input(type="text" required="")
+												label.club-card-form__label ФИО
+												.forms__error-message
+											.club-card__input-cont.club-card__input-cont--min
+												input.club-card-form__input(type="tel" data-mask="phone" size="25" pattern='\\+7\\s\\([0-9]{3}\\)\\s[0-9]{3}-[0-9]{2}-[0-9]{2}' inputmode="tel" required="")
+												label.club-card-form__label Телефон
+												.forms__error-message
+											.club-card__input-cont.club-card__input-cont--min
+												input.club-card-form__input(type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{1,63}$" inputmode="email")
+												label.club-card-form__label Почта
+												.forms__error-message
+
+										.club-card__bottom
+											.club-card__bottom-text Нажимая кнопку "Отправить" Вы даете информированное согласие на 
+												a(href="#") обработку своих персональных данных
+											.club-card__bottom-btn
+												input.club-card__submit.btn(type="submit" value="Отправить")
+												input.club-card__submit.btn(type="submit" value="Расчитать стоимость")
+
+									.club-card__img
+										figure
+											img(src="img/card.png", alt="")
+										.club-card__img--required действует во всех офисах ИНВИТРО
+								.club-card__bot
+									.club-card__bot-phone
+										span
+											a(href="") 8 (800) 000-00-00
+											span Консультация специалистов
+									.club-card__bot-phone
+										span
+											a(href="") 8 (800) 000-00-00
+											span секретарь
+									.club-card__bot-phone
+										span
+											a(href="") 8 (800) 000-00-00
+											span предложения о сотрудничестве
+						.stage
+							.title Чтобы улучшить качество жизни, <span>необходимо:</span>
+							.stage__list
+								.stage__item
+									.stage__arrow 
+										span
+									figure.stage__item-img
+										img(src="img/stage-1.png", alt="")
+									.stage__item-text
+										p Заполнить анамнез,<br> сдать анализы в ИНВИТРО
+								.stage__item
+									.stage__arrow
+										span
+									figure.stage__item-img
+										img(src="img/stage-2.png", alt="")
+									.stage__item-text
+										p Получить интерпретацию<br> анализов и индивидуальные<br> рекомендации специалистов<br> БИОЦЕНТР
+								.stage__item
+									.stage__arrow
+										span
+									figure.stage__item-img
+										img(src="img/stage-3.png", alt="")
+									.stage__item-text
+										p Составить с их помощью<br> свой пазл долголетия:
+										ul 
+											li гигиена
+											li питание
+											li восстановление (сон)
+											li физическая культура
+
+				.security-cont
+					.wrapper 
+						.security
+							.security-slider
+								.security-slider__list
+									.swiper-container
+										.swiper-wrapper
+											a(href="img/photos/security.jpg").security-slider__item.fancybox.swiper-slide
+												img(src="img/photos/security.jpg", alt="")
+											a(href="img/photos/security.jpg").security-slider__item.fancybox.swiper-slide
+												img(src="img/photos/security.jpg", alt="")
+											a(href="img/photos/security.jpg").security-slider__item.fancybox.swiper-slide
+												img(src="img/photos/security.jpg", alt="")
+											a(href="img/photos/security.jpg").security-slider__item.fancybox.swiper-slide
+												img(src="img/photos/security.jpg", alt="")
+
+								.security-slider__nav
+									.swiper-arrow.swiper-button-prev
+									.swiper-arrow.swiper-button-next
+							.security-info
+								.security-info__title INVITRO —  гарантия качества
+								.security-info__text ИНВИТРО – крупнейшая частная медицинская компания в России,<br> специализирующаяся на высокоточной медицинской диагностике и<br> оказании медицинских услуг.
+
+								.security-stat
+									.security-stat__item
+										figure
+											img(src="img/stat-1.png", alt="")
+										.security-stat__num(data-from="0" data-to="485") 0
+										.security-stat__text городов<br> присутствия
+									.security-stat__item
+										figure
+											img(src="img/stat-2.png", alt="")
+										.security-stat__num(data-from="0" data-to="8") 0
+										.security-stat__text лабораторных<br> комплексов
+									.security-stat__item
+										figure
+											img(src="img/stat-3.png", alt="")
+										.security-stat__num(data-from="0" data-to="1163") 0
+										.security-stat__text медицинских<br> офисов
+								.security-link
+									a(href="#") Invitro.ru
+				.testemonials-cont#3
+					.wrapper
+						.testemonials
+							.testemonials-title.title Команда
+							.testemonials-nav
+								ul.testemonials-nav__list
+									li.testemonials-nav__item
+										.testemonials-nav__link
+											input(type="radio" name="filter" id='1' value="1")
+											label(for="1") Профессиональные спортсмены
+									li.testemonials-nav__item
+										.testemonials-nav__link 
+											input(type="radio" name="filter" id='2' value="2")
+											label(for="2") Врачи
+									li.testemonials-nav__item
+										.testemonials-nav__link 
+											input(type="radio" name="filter" id='3' value="3")
+											label(for="3") Профессиональные тренера
+									li.testemonials-nav__item
+										.testemonials-nav__link 
+											input(type="radio" name="filter" id='4' value="4")
+											label(for="4") Рефбилитологи
+									li.testemonials-nav__item.reset-filter Сбросить фильтр
+
+							.testemonials-slider
+								.testemonials-slider__arrow
+								.testemonials__list
+									.testemonials__item(data-id="1")
+										.testemonials__item-top
+											.testemonials__item-photo.user
+												img(src="img/ico-avatar.jpg")
+											div
+												.testemonials__item-title Востриков Андрей Евгеньевич 1
+
+												.testemonials__item-subtitle 1977 г.р МС Чемпион России среди студентов, победитель и призёр всероссийских и международных соревнований по дзюдо.
+										.testemonials__item-middle
+											.testemonials__item-text При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми ...
+										.testemonials__item-files
+											.testemonials__item-file.ico-jpg
+												.file-name Photo 1 (снаружи дома)
+												.file-weight 17.6 Кб
+											.testemonials__item-file.ico-jpg
+												.file-name Photo 2 (изнутри дома)
+												.file-weight 17.6 Кб
+										.testemonials__item-btn
+											.testemonials-btn Развернуть
+											.testemonials-soc
+												.soc
+													a.soc__link(href="#") 
+														img(src="img/ico-fb-maincolor.svg")
+													a.soc__link(href="#") 
+														img(src="img/ico-insta-maincolor.svg")
+													a.soc__link(href="#") 
+														img(src="img/ico-vk-maincolor.svg")
+
+									.testemonials__item(data-id="1")
+										.testemonials__item-top
+											.testemonials__item-photo.user
+												img(src="img/ico-avatar.jpg")
+											div
+												.testemonials__item-title Востриков Андрей Евгеньевич 1
+
+												.testemonials__item-subtitle 1977 г.р МС Чемпион России среди студентов, победитель и призёр всероссийских и международных соревнований по дзюдо.
+										.testemonials__item-middle
+											.testemonials__item-text При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми ...
+										.testemonials__item-files
+											.testemonials__item-file.ico-jpg
+												.file-name Photo 1 (снаружи дома)
+												.file-weight 17.6 Кб
+											.testemonials__item-file.ico-jpg
+												.file-name Photo 2 (изнутри дома)
+												.file-weight 17.6 Кб
+										.testemonials__item-btn
+											.testemonials-btn Развернуть
+											.testemonials-soc
+												.soc
+													a.soc__link(href="#") 
+														img(src="img/ico-fb-maincolor.svg")
+													a.soc__link(href="#") 
+														img(src="img/ico-insta-maincolor.svg")
+													a.soc__link(href="#") 
+														img(src="img/ico-vk-maincolor.svg")
+									.testemonials__item(data-id="2")
+										.testemonials__item-top
+											.testemonials__item-photo.user
+												img(src="img/ico-avatar.jpg")
+											div
+												.testemonials__item-title Востриков Андрей Евгеньевич 2
+
+												.testemonials__item-subtitle 1977 г.р МС Чемпион России среди студентов, победитель и призёр всероссийских и международных соревнований по дзюдо.
+										.testemonials__item-middle
+											.testemonials__item-text При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми ...
+										.testemonials__item-files
+											.testemonials__item-file.ico-jpg
+												.file-name Photo 1 (снаружи дома)
+												.file-weight 17.6 Кб
+											.testemonials__item-file.ico-jpg
+												.file-name Photo 2 (изнутри дома)
+												.file-weight 17.6 Кб
+										.testemonials__item-btn
+											.testemonials-btn Развернуть
+									.testemonials__item(data-id="1")
+										.testemonials__item-top
+											.testemonials__item-photo.user
+												img(src="img/ico-avatar.jpg")
+											div
+												.testemonials__item-title Востриков Андрей Евгеньевич 1
+
+												.testemonials__item-subtitle 1977 г.р МС Чемпион России среди студентов, победитель и призёр всероссийских и международных соревнований по дзюдо.
+										.testemonials__item-middle
+											.testemonials__item-text При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми ...
+										.testemonials__item-files
+											.testemonials__item-file.ico-jpg
+												.file-name Photo 1 (снаружи дома)
+												.file-weight 17.6 Кб
+											.testemonials__item-file.ico-jpg
+												.file-name Photo 2 (изнутри дома)
+												.file-weight 17.6 Кб
+										.testemonials__item-btn
+											.testemonials-btn Развернуть
+											.testemonials-soc
+												.soc
+													a.soc__link(href="#") 
+														img(src="img/ico-fb-maincolor.svg")
+													a.soc__link(href="#") 
+														img(src="img/ico-insta-maincolor.svg")
+													a.soc__link(href="#") 
+														img(src="img/ico-vk-maincolor.svg")
+									.testemonials__item(data-id="3")
+										.testemonials__item-top
+											.testemonials__item-photo.user
+												img(src="img/ico-avatar.jpg")
+											div
+												.testemonials__item-title Востриков Андрей Евгеньевич 3
+
+												.testemonials__item-subtitle 1977 г.р МС Чемпион России среди студентов, победитель и призёр всероссийских и международных соревнований по дзюдо.
+										.testemonials__item-middle
+											.testemonials__item-text При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми ...
+										.testemonials__item-files
+											.testemonials__item-file.ico-jpg
+												.file-name Photo 1 (снаружи дома)
+												.file-weight 17.6 Кб
+											.testemonials__item-file.ico-jpg
+												.file-name Photo 2 (изнутри дома)
+												.file-weight 17.6 Кб
+										.testemonials__item-btn
+											.testemonials-btn Развернуть
+									.testemonials__item(data-id="4")
+										.testemonials__item-top
+											.testemonials__item-photo.user
+												img(src="img/ico-avatar.jpg")
+											div
+												.testemonials__item-title Востриков Андрей Евгеньевич 4
+
+												.testemonials__item-subtitle 1977 г.р МС Чемпион России среди студентов, победитель и призёр всероссийских и международных соревнований по дзюдо.
+										.testemonials__item-middle
+											.testemonials__item-text При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми ...
+										.testemonials__item-files
+											.testemonials__item-file.ico-jpg
+												.file-name Photo 1 (снаружи дома)
+												.file-weight 17.6 Кб
+											.testemonials__item-file.ico-jpg
+												.file-name Photo 2 (изнутри дома)
+												.file-weight 17.6 Кб
+										.testemonials__item-btn
+											.testemonials-btn
+											.testemonials-soc
+												.soc
+													a.soc__link(href="#") 
+														img(src="img/ico-fb-maincolor.svg")
+													a.soc__link(href="#") 
+														img(src="img/ico-insta-maincolor.svg")
+													a.soc__link(href="#") 
+														img(src="img/ico-vk-maincolor.svg")
+									.testemonials__item(data-id="4")
+										.testemonials__item-top
+											.testemonials__item-photo.user
+												img(src="img/ico-avatar.jpg")
+											div
+												.testemonials__item-title Востриков Андрей Евгеньевич 4
+
+												.testemonials__item-subtitle 1977 г.р МС Чемпион России среди студентов, победитель и призёр всероссийских и международных соревнований по дзюдо.
+										.testemonials__item-middle
+											.testemonials__item-text При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми ...
+										.testemonials__item-files
+											.testemonials__item-file.ico-jpg
+												.file-name Photo 1 (снаружи дома)
+												.file-weight 17.6 Кб
+											.testemonials__item-file.ico-jpg
+												.file-name Photo 2 (изнутри дома)
+												.file-weight 17.6 Кб
+										.testemonials__item-btn
+											.testemonials-btn 
+											.testemonials-soc
+												.soc
+													a.soc__link(href="#") 
+														img(src="img/ico-fb-maincolor.svg")
+													a.soc__link(href="#") 
+														img(src="img/ico-insta-maincolor.svg")
+													a.soc__link(href="#") 
+														img(src="img/ico-vk-maincolor.svg")
+				.services-cont#2
+					.wrapper
+						.services
+							.services-title.title Услуги
+							.tabs
+								.services__list
+									.services__item.tabs-tab.active(data-id="1")
+										.services__item-info
+											.services-info__text Для тех, кто не<br> занимается<br> физкультурой<br> и спортом
+											.services-btn
+										.services__item-slider
+											.swiper-container
+												.swiper-wrapper
+													figure.services__item-img.swiper-slide
+														img(src="img/photos/serv-1.jpg", alt="")
+													figure.services__item-img.swiper-slide
+														img(src="img/photos/serv-2.jpg", alt="")
+													figure.services__item-img.swiper-slide
+														img(src="img/photos/serv-3.jpg", alt="")
+									.services__item.tabs-tab(data-id="2")
+										.services__item-info
+											.services-info__text Для тех, кто<br> занимается<br> физкультурой
+											.services-btn
+										.services__item-slider
+											.swiper-container
+												.swiper-wrapper
+													figure.services__item-img.swiper-slide
+														img(src="img/photos/serv-2.jpg", alt="")
+													figure.services__item-img.swiper-slide
+														img(src="img/photos/serv-1.jpg", alt="")
+													figure.services__item-img.swiper-slide
+														img(src="img/photos/serv-3.jpg", alt="")
+									.services__item.tabs-tab(data-id="3")
+										.services__item-info
+											.services-info__text Для спортсменов -<br> любителей
+											.services-btn
+										.services__item-slider
+											.swiper-container
+												.swiper-wrapper
+													figure.services__item-img.swiper-slide
+														img(src="img/photos/serv-3.jpg", alt="")
+													figure.services__item-img.swiper-slide
+														img(src="img/photos/serv-2.jpg", alt="")
+													figure.services__item-img.swiper-slide
+														img(src="img/photos/serv-3.jpg", alt="")
+									.services__item.tabs-tab(data-id="4")
+										.services__item-info
+											.services-info__text Для<br> профессиональных<br> спортсменов
+											.services-btn
+										.services__item-slider
+											.swiper-container
+												.swiper-wrapper
+													figure.services__item-img.swiper-slide
+														img(src="img/photos/serv-4.jpg", alt="")
+													figure.services__item-img.swiper-slide
+														img(src="img/photos/serv-2.jpg", alt="")
+													figure.services__item-img.swiper-slide
+														img(src="img/photos/serv-3.jpg", alt="")
+								.tabs-content.active(data-id="1")
+									.services__content
+										.services__content-title Для профессиональных спортсменов 1
+										.services__content-wr
+											.services-slider
+												.swiper-container
+													.swiper-wrapper
+														a(href="img/photos/services.jpg").services-slider__item.fancybox.swiper-slide
+															img(src="img/photos/services.jpg", alt="")
+														a(href="img/photos/services.jpg").services-slider__item.fancybox.swiper-slide
+															img(src="img/photos/services.jpg", alt="")
+														a(href="img/photos/services.jpg").services-slider__item.fancybox.swiper-slide
+															img(src="img/photos/services.jpg", alt="")
+														a(href="img/photos/services.jpg").services-slider__item.fancybox.swiper-slide
+															img(src="img/photos/services.jpg", alt="")
+												.services-slider__nav
+													.swiper-arrow.swiper-button-prev
+													.swiper-arrow.swiper-button-next
+
+											.services-info
+												.services__price-label Стоимость услуги
+												.services__price 1 500 <i class="rub">₽</i>
+												.services-info__text
+													.text-page
+														p При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми этими экспериментами на выживание над собственным телом.
+														h4 Что входит в стоимость?
+														ul
+															li диагностика
+															li сопровождение пациента на протяжении лечения
+															li рекомендуемый список анализов
+															li диагностика
+															li сопровождение пациента на протяжении лечения
+												.services-info__btn
+													a(href="").btn Оставить заявку
+								.tabs-content(data-id="2")
+									.services__content
+										.services__content-title Для профессиональных спортсменов 2
+										.services__content-wr
+											.services-slider
+												.swiper-container
+													.swiper-wrapper
+														a(href="img/photos/services.jpg").services-slider__item.fancybox.swiper-slide
+															img(src="img/photos/services.jpg", alt="")
+														a(href="img/photos/services.jpg").services-slider__item.fancybox.swiper-slide
+															img(src="img/photos/services.jpg", alt="")
+														a(href="img/photos/services.jpg").services-slider__item.fancybox.swiper-slide
+															img(src="img/photos/services.jpg", alt="")
+														a(href="img/photos/services.jpg").services-slider__item.fancybox.swiper-slide
+															img(src="img/photos/services.jpg", alt="")
+												.services-slider__nav
+													.swiper-arrow.swiper-button-prev
+													.swiper-arrow.swiper-button-next
+
+											.services-info
+												.services__price-label Стоимость услуги
+												.services__price 1 500 <i class="rub">₽</i>
+												.services-info__text
+													.text-page
+														p При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми этими экспериментами на выживание над собственным телом.
+														h4 Что входит в стоимость?
+														ul
+															li диагностика
+															li сопровождение пациента на протяжении лечения
+															li рекомендуемый список анализов
+															li диагностика
+															li сопровождение пациента на протяжении лечения
+												.services-info__btn
+													a(href="").btn Оставить заявку
+								.tabs-content(data-id="3")
+									.services__content
+										.services__content-title Для профессиональных спортсменов 3
+										.services__content-wr
+											.services-slider
+												.swiper-container
+													.swiper-wrapper
+														a(href="img/photos/services.jpg").services-slider__item.fancybox.swiper-slide
+															img(src="img/photos/services.jpg", alt="")
+														a(href="img/photos/services.jpg").services-slider__item.fancybox.swiper-slide
+															img(src="img/photos/services.jpg", alt="")
+														a(href="img/photos/services.jpg").services-slider__item.fancybox.swiper-slide
+															img(src="img/photos/services.jpg", alt="")
+														a(href="img/photos/services.jpg").services-slider__item.fancybox.swiper-slide
+															img(src="img/photos/services.jpg", alt="")
+												.services-slider__nav
+													.swiper-arrow.swiper-button-prev
+													.swiper-arrow.swiper-button-next
+
+											.services-info
+												.services__price-label Стоимость услуги
+												.services__price 1 500 <i class="rub">₽</i>
+												.services-info__text
+													.text-page
+														p При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми этими экспериментами на выживание над собственным телом.
+														h4 Что входит в стоимость?
+														ul
+															li диагностика
+															li сопровождение пациента на протяжении лечения
+															li рекомендуемый список анализов
+															li диагностика
+															li сопровождение пациента на протяжении лечения
+												.services-info__btn
+													a(href="").btn Оставить заявку
+								.tabs-content(data-id="4")
+									.services__content
+										.services__content-title Для профессиональных спортсменов 4
+										.services__content-wr
+											.services-slider
+												.swiper-container
+													.swiper-wrapper
+														a(href="img/photos/services.jpg").services-slider__item.fancybox.swiper-slide
+															img(src="img/photos/services.jpg", alt="")
+														a(href="img/photos/services.jpg").services-slider__item.fancybox.swiper-slide
+															img(src="img/photos/services.jpg", alt="")
+														a(href="img/photos/services.jpg").services-slider__item.fancybox.swiper-slide
+															img(src="img/photos/services.jpg", alt="")
+														a(href="img/photos/services.jpg").services-slider__item.fancybox.swiper-slide
+															img(src="img/photos/services.jpg", alt="")
+												.services-slider__nav
+													.swiper-arrow.swiper-button-prev
+													.swiper-arrow.swiper-button-next
+
+											.services-info
+												.services__price-label Стоимость услуги
+												.services__price 1 500 <i class="rub">₽</i>
+												.services-info__text
+													.text-page
+														p При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми этими экспериментами на выживание над собственным телом.
+														h4 Что входит в стоимость?
+														ul
+															li диагностика
+															li сопровождение пациента на протяжении лечения
+															li рекомендуемый список анализов
+															li диагностика
+															li сопровождение пациента на протяжении лечения
+												.services-info__btn
+													a(href="").btn Оставить заявку
+				.information-cont
+					.wrapper
+						.information
+							.information-img
+								.circle
+								img(src="img/information.png", alt="")
+							.information-info 
+								.information-text Для достижения результата<br> данные исследования<br> необходимо проходить<br> 4 раза в год
+								.information-info__dop 1 раз в сезон
+				.reviews-cont#4
+					.wrapper
+						.testemonials
+							.testemonials-title.title Отзывы
+							.testemonials__list-cont
+								.testemonials-slider__arrow
+								.testemonials__list
+									.testemonials__item
+										.testemonials__item-top
+											.testemonials__item-photo
+												img(src="img/ico-avatar-1.png")
+											div
+												.testemonials__item-title Востриков Андрей Евгеньевич
+												
+										.testemonials__item-middle
+											.testemonials__item-text При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми ...
+										.testemonials__item-files
+											.testemonials__item-file.ico-jpg
+												.file-name Photo 1
+												.file-weight 17.6 Кб
+											.testemonials__item-file.ico-jpg
+												.file-name Photo 2
+												.file-weight 17.6 Кб
+										.testemonials__item-btn
+											.testemonials-btn Развернуть
+											.testemonials-data 05.03.2019
+									.testemonials__item
+										.testemonials__item-top
+											.testemonials__item-photo
+												img(src="img/ico-avatar-1.png")
+											div
+												.testemonials__item-title Востриков Андрей Евгеньевич
+												
+										.testemonials__item-middle
+											.testemonials__item-text При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми ...
+										.testemonials__item-files
+											.testemonials__item-file.ico-jpg
+												.file-name Photo 1
+												.file-weight 17.6 Кб
+											.testemonials__item-file.ico-jpg
+												.file-name Photo 2
+												.file-weight 17.6 Кб
+										.testemonials__item-btn
+											.testemonials-btn Развернуть
+											.testemonials-data 05.03.2019
+									.testemonials__item
+										.testemonials__item-top
+											.testemonials__item-photo
+												img(src="img/ico-avatar-1.png")
+											div
+												.testemonials__item-title Востриков Андрей Евгеньевич
+												
+										.testemonials__item-middle
+											.testemonials__item-text При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми ...
+										.testemonials__item-files
+											.testemonials__item-file.ico-jpg
+												.file-name Photo 1
+												.file-weight 17.6 Кб
+											.testemonials__item-file.ico-jpg
+												.file-name Photo 2
+												.file-weight 17.6 Кб
+										.testemonials__item-btn
+											.testemonials-btn Развернуть
+											.testemonials-data 05.03.2019
+				.faq-cont#5
+					.wrapper
+						.faq
+							.faq-title.title FAQ
+							.faq__list
+								.faq__item
+									.faq__item-top
+										span Что такое спортивный чек-акт?
+										.faq-arrow
+									.faq__item-bot
+										.text-page
+											p Систематический контроль показателей здоровья не только является неотъемлемой частью здорового образа жизни, но и жизненно необходим. Некоторые серьезные заболевания долгое время протекают без симптомов.
+											p Для того, чтобы понять, что происходит с организмом в настоящий момент, мы предлагаем вам заполнить анамнез и сдать следующие анализы:
+											ul
+												li общий анализ крови
+												li биохимический анализ крови
+												li общий анализ мочи
+												li холестирин
+											p По итогам исследований вы получите персональные рекомендации по улучшению качества вашей жизни: сон, питание, гигиена, физкультура
+								.faq__item
+									.faq__item-top
+										span Что такое ЗОЖ чек-ар?
+										.faq-arrow
+									.faq__item-bot
+										.text-page
+											p Систематический контроль показателей здоровья не только является неотъемлемой частью здорового образа жизни, но и жизненно необходим. Некоторые серьезные заболевания долгое время протекают без симптомов.
+											p Для того, чтобы понять, что происходит с организмом в настоящий момент, мы предлагаем вам заполнить анамнез и сдать следующие анализы:
+											ul
+												li общий анализ крови
+												li биохимический анализ крови
+												li общий анализ мочи
+												li холестирин
+											p По итогам исследований вы получите персональные рекомендации по улучшению качества вашей жизни: сон, питание, гигиена, физкультура
+								.faq__item
+									.faq__item-top
+										span Как управлять здоровьем - с помощью?
+										.faq-arrow
+									.faq__item-bot
+										.text-page
+											p Систематический контроль показателей здоровья не только является неотъемлемой частью здорового образа жизни, но и жизненно необходим. Некоторые серьезные заболевания долгое время протекают без симптомов.
+											p Для того, чтобы понять, что происходит с организмом в настоящий момент, мы предлагаем вам заполнить анамнез и сдать следующие анализы:
+											ul
+												li общий анализ крови
+												li биохимический анализ крови
+												li общий анализ мочи
+												li холестирин
+											p По итогам исследований вы получите персональные рекомендации по улучшению качества вашей жизни: сон, питание, гигиена, физкультура
+								.faq__item
+									.faq__item-top
+										span Неинвазивно?
+										.faq-arrow
+									.faq__item-bot
+										.text-page
+											p Систематический контроль показателей здоровья не только является неотъемлемой частью здорового образа жизни, но и жизненно необходим. Некоторые серьезные заболевания долгое время протекают без симптомов.
+											p Для того, чтобы понять, что происходит с организмом в настоящий момент, мы предлагаем вам заполнить анамнез и сдать следующие анализы:
+											ul
+												li общий анализ крови
+												li биохимический анализ крови
+												li общий анализ мочи
+												li холестирин
+											p По итогам исследований вы получите персональные рекомендации по улучшению качества вашей жизни: сон, питание, гигиена, физкультура
+				
+		include inc/footer.pug
+		include inc/scripts.pug

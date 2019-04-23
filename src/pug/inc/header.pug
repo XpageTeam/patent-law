@@ -1,0 +1,46 @@
+header.head
+	.head__wrap
+		.head__logo
+			a.logo(href="#")
+				img.logo__white.active(src="img/logo-bio.png" alt="")
+				img.logo__color(src="img/logo-invitro.png" alt="")
+		nav.head__menu
+			ul.h-menu
+				li.h-menu__item.active
+					a.h-menu__link(href="#1") Цель проекта
+				li.h-menu__item
+					a.h-menu__link(href="#2") Услуги
+				li.h-menu__item
+					a.h-menu__link(href="#3") Команда
+				li.h-menu__item
+					a.h-menu__link(href="#4") Отзывы
+				li.h-menu__item
+					a.h-menu__link(href="#5") FAQ
+				li.h-menu__item
+					a.h-menu__link(href="#6") Контакты
+
+		.head__contacts
+			.head__contacts-phones
+				address.h-phone
+					a(href="tel: 8 800 500 51 70") 8 800 500 51 70
+			.h-city
+				select.h-city__select
+					option(value="0" selected="") Челябинск
+					- for (let i = 1; i <= 2; i++)
+						option(value=i) Екатеринбург
+					option(value="4") Москва
+					option(value="5") Комсомольск-на-Амуре
+		.head__btn
+			a(href="").btn Оставить заявку
+		.head__soc
+			.soc
+				a.soc__link(href="#") 
+					img(src="img/ico-fb.svg")
+				a.soc__link(href="#") 
+					img(src="img/ico-insta.svg")
+				a.soc__link(href="#") 
+					img(src="img/ico-vk.svg")
+
+		.head__burger
+			.burger
+				span
