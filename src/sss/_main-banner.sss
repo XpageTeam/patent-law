@@ -31,9 +31,70 @@
 
 	&__slide
 		&-title
+			position: relative
 			font-size: rem(36)
 			margin-bottom: 35px
+
+			&:before
+				content: '“'
+				display: block
+				position: absolute
+				top: -10px
+				right: calc(100% - -10px)
+				font-size: rem(120)
+				line-height: 1
+				-webkit-text-stroke: 1px #fff
+				-webkit-text-fill-color: transparent
+
+			&:after
+				content: '“'
+				display: block
+				position: absolute
+				bottom: -10px
+				left: calc(100%)
+				font-size: rem(120)
+				line-height: 1
+				-webkit-text-stroke: 1px #fff
+				-webkit-text-fill-color: transparent
+				transform: rotate(180deg)
+
+
+
 
 		&-text
 			line-height: 2
 
+@media screen and (max-height: 780px)
+	
+	.main-slider__slide-title
+		font-size: 1.8rem
+		margin-bottom: 20px
+
+
+
+@media screen and (max-width: 1500px)
+	
+	.main-slider
+		height: 100vh
+
+		img
+			height: 100%
+			width: 100%
+			object-fit: cover
+			object-position: center
+
+		&__slide
+			height: 100%
+
+
+@media screen and (max-width: 1400px)
+
+	.main-slider__slide-title
+		&:before
+			right: 100%
+
+		&:after
+			left: 93%
+
+		&:after, &:before
+			font-size: 4.5rem

@@ -1,0 +1,89 @@
+.news
+	display: flex
+	align-items: flex-start
+
+	&-main
+		width: 100%
+
+		&-cont
+			margin-top: 110px
+
+			.ordering-form
+				width: calc(100% - 725px)
+				margin-left: 94px
+				background: #fff
+				border: 1px solid var(--second-color)
+				color: #000
+				flex: none
+				position: sticky
+				top: 0
+
+
+				&__title
+					color: #000
+
+
+				.forms
+					&__input
+						border: 1px solid #E5E5E5
+						box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1)
+
+						&-cont
+
+							&:not(:first-child)
+								margin-top: 22px
+
+					&__bot
+						flex-direction: column-reverse
+						margin-top: 30px
+
+					&__req
+						color: #C6C6C6
+
+					&__submit
+						margin: 30px 0 0 0
+
+
+	&-top
+		background: var(--main-color)
+		color: #fff
+		display: flex 
+		justify-content: space-between
+		align-items: center
+		padding: 55px
+
+	&-title
+		font-size: rem(24)
+		line-height: 1
+
+	&__item
+		padding: 50px 0
+		border-bottom: 1px solid #E5E5E5
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+		&-title
+			font-size: rem(18)
+			max-width: 400px
+
+		&-date
+			border: 1px solid #E5E5E5
+			border-radius: 100px
+			padding: 9px 20px 10px
+			line-height: 1
+			flex: none
+			margin-left: 20px
+
+
+@media screen and (max-width: 1500px)
+	.news
+		&-main-cont
+			margin-top: 85px
+
+		&-top
+			padding: 45px
+
+
+		&__item
+			padding: 35px 0

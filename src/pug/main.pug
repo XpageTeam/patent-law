@@ -66,38 +66,96 @@ html(lang="ru")
 											.partners-item__arrow
 												span
 											.partners-item__title=title
-				.advantages
-					.advantages__top
-						.advantages-title Наши преимущества
-						.advantages-arrow
-					.advantages__list
-						.advantages__item
-							.advantages__item-title Экспертность
-							.advantages__item-text Более 15 лет опыта, высокий профессионализм, более 500 выигранных дел, признание коллег – все это позволяет нам решать Ваши проблемы экспертно
-						.advantages__item
-							.advantages__item-title Результативность
-							.advantages__item-text Нам важно решить Вашу проблему, а не только выиграть суд. Для любой Вашей задачи найдется наше решение
-						.advantages__item
-							.advantages__item-title Надежность
-							.advantages__item-text С момента обращения  мы обеспечиваем Вам  моральный  комфорт и безопасность от действий противной стороны и ее адвокатов, сотрудников банка и коллекторов, иных участников конфликта
-				.news-cont
+				.advantages-cont
+					.wrapper
+						.advantages
+							.advantages__top
+								.advantages-title Наши преимущества
+								.advantages-arrow
+							.advantages__list
+								.advantages__item
+									.advantages__item-title
+										span
+											svg.ico
+												use(xlink:href="#ico-advantages")
+										span Экспертность
+									.advantages__item-text Более 15 лет опыта, высокий профессионализм, более 500 выигранных дел, признание коллег – все это позволяет нам решать Ваши проблемы экспертно
+								.advantages__item
+									.advantages__item-title 
+										span
+											svg.ico
+												use(xlink:href="#ico-advantages")
+										span Результативность
+									.advantages__item-text Нам важно решить Вашу проблему, а не только выиграть суд. Для любой Вашей задачи найдется наше решение
+								.advantages__item
+									.advantages__item-title 
+										span
+											svg.ico
+												use(xlink:href="#ico-advantages")
+										span Надежность
+									.advantages__item-text С момента обращения  мы обеспечиваем Вам  моральный  комфорт и безопасность от действий противной стороны и ее адвокатов, сотрудников банка и коллекторов, иных участников конфликта
+								.advantages__item
+									.advantages__item-title 
+										span
+											svg.ico
+												use(xlink:href="#ico-advantages")
+										span Экспертность
+									.advantages__item-text Более 15 лет опыта, высокий профессионализм, более 500 выигранных дел, признание коллег – все это позволяет нам решать Ваши проблемы экспертно
+								.advantages__item
+									.advantages__item-title 
+										span
+											svg.ico
+												use(xlink:href="#ico-advantages")
+										span Результативность
+									.advantages__item-text Нам важно решить Вашу проблему, а не только выиграть суд. Для любой Вашей задачи найдется наше решение
+								.advantages__item
+									.advantages__item-title 
+										span
+											svg.ico
+												use(xlink:href="#ico-advantages")
+										span Надежность
+									.advantages__item-text С момента обращения  мы обеспечиваем Вам  моральный  комфорт и безопасность от действий противной стороны и ее адвокатов, сотрудников банка и коллекторов, иных участников конфликта
+				.news-main-cont
 					.wrapper
 						.news
-							.news-top
-								.news-title СМИ о нас
-								a(href="").news-btn все новости
-							.news__list
-								a(href="").news__item
-									.news__item-title Челябинский суд решит спор между автором патента и производителями подъемника для инвалидов
-									.news__item-date 2019.04.02
-								a(href="").news__item
-									.news__item-title «Вместо дворца – сарай!» На Южном Урале разгорается скандал вокруг проекта за 1 млрд руб.
-									.news__item-date 2019.04.02
-								a(href="").news__item
-									.news__item-title Челябинский суд встал на сторону «крушителей патента»
-									.news__item-date 2019.04.02
+							.news-main
+								.news-top
+									.news-title СМИ о нас
+									a(href="").btn Все новости
+								.news__list
+									a(href="").news__item
+										.news__item-title Челябинский суд решит спор между автором патента и производителями подъемника для инвалидов
+										.news__item-date 2019.04.02
+									a(href="").news__item
+										.news__item-title «Вместо дворца – сарай!» На Южном Урале разгорается скандал вокруг проекта за 1 млрд руб.
+										.news__item-date 2019.04.02
+									a(href="").news__item
+										.news__item-title Челябинский суд встал на сторону «крушителей патента»
+										.news__item-date 2019.04.02
 
-							include inc/ordering-form.pug
+							.ordering-form
+								.ordering-form__title Закажите обратный звонок
+								form(action="")
+									.form-wrap
+										.forms__input-cont
+											input.forms__input(type="text" placeholder="Иванов Иван Иванович" required="")
+											label.forms__label Ваше имя
+											.forms__error-message
+										.forms__input-cont
+											input.forms__input(type="teд" placeholder="+7 (351) 000 00 00 " required="")
+											label.forms__label Ваш телефон
+											.forms__error-message
+										.forms__input-cont
+											input.forms__input(type="teд" placeholder="Введите текст" required="")
+											label.forms__label Ваша проблема
+											.forms__error-message
+									.forms__bot
+										.forms__submit
+											input.btn(type="submit" value="Оcтавить заявку")
+										.forms__req Нажимая на кнопку отправки сообщения, я соглашаюсь на обработку моих <a href="#">персональных данных</a>
+
+	
+
 
 
 

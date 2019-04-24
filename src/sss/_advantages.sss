@@ -1,4 +1,68 @@
 .advantages
-	padding: 130px 0 115px
-	background: var(--main-color)
+	position: relative
 	color: #fff
+
+	&-cont
+		padding: 130px 0 115px
+		background: var(--main-color)
+		overflow-x: hidden
+
+	&__top
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		padding: 70px
+		background: var(--second-color)
+		color: #fff
+		z-index: 10
+
+	&-title
+		font-size: rem(24)
+		margin-bottom: 50px
+
+
+
+
+	&__item
+		border: 1px solid var(--second-color)
+		padding: 70px
+
+		&-title
+			display: flex 
+			align-items: center
+			margin-bottom: 25px
+			font-size: rem(18)
+
+		.ico
+			size: 24px 28px
+			fill: var(--second-color)
+			margin-right: 25px
+
+		&-text
+			font-size: rem(14)
+			line-height: 1.5
+
+	.slick
+		&-list
+			margin: 0 -25px
+			overflow: visible
+
+		&-slide
+			margin: 0 25px
+			display: flex !important
+
+			> div
+				display: flex
+
+		&-track
+			display: flex !important
+
+@media screen and (max-width: 1500px)
+	.advantages
+
+		&-cont
+			padding: 85px 0
+			
+		&__item, &__top
+			padding: 45px

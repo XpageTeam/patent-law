@@ -39,15 +39,6 @@ document.addEventListener("DOMContentLoaded", e => {
 
 
 
-	
-	
-
-
-
-
-
-
-
 	if ($(".statistic__num").length){
 		$(".statistic__num").countTo();
 	}
@@ -125,32 +116,33 @@ document.addEventListener("DOMContentLoaded", e => {
 		appendArrows: $('.partners-arrow'),
 	});
 
+	$('.advantages__list').slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		appendArrows: $('.advantages-arrow'),
+	});
 
-	
+	function widthAdvantage(){
+		var advantagesItemWidth =  $('.advantages__item').outerWidth();
+
+		$('.advantages__top').css({
+			"width": advantagesItemWidth,
+		})
+
+	}
 
 
 
-	
-
-
-	
 
 	if (!is.touchDevice()){
 		window.selectizeOpen = false;
 
 		$("select:not(.not-selectize)").selectize({
-			onDropdownOpen(){
-				window.selectizeOpen = true;
-
-				if (window.fullpage)
-					window.fullpage.setAllowScrolling(false)
-			},
-			onDropdownClose(){
-				window.selectizeOpen = false;
-
-				if (window.fullpage)
-					window.fullpage.setAllowScrolling(true)
-			}
+			 // onInitialize: function() {
+		  //       this.$control_input.attr('readonly', true);
+		  //    },
+			create: true,
 		})
 	}
 
@@ -172,8 +164,14 @@ document.addEventListener("DOMContentLoaded", e => {
 
 				window.mainMenuOpened = false;
 			}
-	})
+	});
+
+	widthAdvantage();
 })
+
+$(window).on("load resize", e => {
+	widthAdvantage();
+});
 
 $(window).on("load scroll resize", e => {
 
