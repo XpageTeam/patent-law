@@ -123,6 +123,14 @@ document.addEventListener("DOMContentLoaded", e => {
 		appendArrows: $('.advantages-arrow'),
 	});
 
+	$('.standart-slider__list').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		fade: true,
+		appendArrows: $('.standart-slider__arrow'),
+	});
+
 	function widthAdvantage(){
 		var advantagesItemWidth =  $('.advantages__item').outerWidth();
 

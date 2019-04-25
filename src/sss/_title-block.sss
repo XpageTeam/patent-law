@@ -1,39 +1,3 @@
-.has-top-slider
-
-	.title-block
-		position: absolute 0
-		max-width: var(--baseWidth)
-		color: #fff
-		padding: 120px 2rem 0
-		box-sizing: content-box
-		margin: 0 auto
-		display: flex
-		flex-direction: column
-		justify-content: center
-
-		&__title
-			margin-bottom: 50px
-
-			h1
-				font-size: 60px
-				line-height: calc(56 / 60)
-				font-weight: 300
-
-		&__crumbs
-			display: flex
-			justify-content: space-between
-			align-items: flex-end
-
-			.bread-crumbs
-
-				&__this
-					color: #fff
-
-				&__link
-
-					&:after
-						color: #fff
-
 .title-slider
 	position: relative
 	max-width: 100%
@@ -76,6 +40,9 @@
 .title-block
 	flex: 1 1 auto
 
+	&__cont
+		padding: 60px 0px
+
 	&__crumbs
 		margin: 7px 0 0
 
@@ -95,18 +62,17 @@
 	font-size: 13px
 
 	&__link
-		margin-right: 27px
 		position: relative
 		color: var(--mainColor)
 
 		&:after
-			content: "|"
+			content: "-"
 			color: #989898
-			position: absolute
-			left: calc(100% + 11px)
+			display: inline-block
+			margin: 0 10px
 
 	&__this
-		color: #989898
+		color: var(--second-color)
 
 
 @media screen and (max-width: 1600px)

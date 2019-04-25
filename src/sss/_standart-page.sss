@@ -21,94 +21,99 @@
 		justify-content: space-between
 		margin: 70px 0 0
 
-.another-services
-	display: flex
-	flex-wrap: wrap
-	margin: 0 0 -60px -60px
 
-	&__item
-		width: calc((100% - 60px * 3) / 3)
-		margin: 0 0 60px 60px
-		display: flex
-		flex-direction: column
+.standart-slider
+	position: relative
+	margin-bottom: 75px
 
-		&-title
-			flex: none
-			margin-bottom: 21px
-			font-size: 20px
+	&__arrow
+		position: absolute
+		bottom: 50px
+		left: 50px
 
-		&-text
-			flex: 1 1 auto
-			line-height: calc(24 / 16)
+	.slick
+		&-arrow
+			size: 44px
+			background: #fff
+			border-radius: 6px
 
-		&-btn
-			margin: 37px 0 0
+			&:before
+				content: ''
+				position: absolute
+				size: 8px
+				display: block
+				top: calc(50% - 4px)
+				left: calc(50% - 4px)
+				border-right: 1px solid var(--main-color)
+				border-top: 1px solid var(--main-color)
+				transform: rotate(45deg)
 
+		&-next
+			margin-left: 20px
+	img 
+		display: block
 
-
-@media screen and (max-width: 1600px) and (min-width: 660px)
-	.standart-page
-
-		&__text
-			padding: 35px 30px
-
-		&__another
-			margin: 40px 0 0
-			padding: 0 30px
-
-			&-title
-				margin-bottom: 25px
-
-
-@media screen and (max-width: 1000px)
-	.standart-page
-
-		&__arrows
-			margin: 20px 0 0
-
-@media screen and (max-width: 660px)
-	.standart-page
-		margin: -20px 0 0
-
-		&__text
-			padding: 16px
-			margin: 0 -16px
-
-		&__another
-			margin: 20px 0 0
-			padding: 0
-
-			&-title
-				font-size: 18px
-				margin-bottom: 15px
-
-	.another-services
-		margin: 0
-
-		&__item
-			width: 100%
-			margin: 0
-
-			&:not(:first-child)
-				margin: 20px 0 0
-
-			&-title
-				font-size: 16px
-				margin-bottom: 8px
-
-			&-text
-				font-size: 14px
-
-			&-btn
-				margin: 10px 0 0
-
-	.standart-page
-
-		&__arrows
+	.slick-slide
+		> div 
 			display: block
 
-			.arrow-btn
-				width: 100%
+	&-info
+		max-width: 435px
+		color: #fff
+		user-select: none
+		margin-left: 105px
 
-				&:not(:first-child)
-					margin: 16px 0 0
+	&__item
+		display: block !important
+
+	&__slide
+		&-title
+			position: relative
+			font-size: rem(36)
+			margin-bottom: 35px
+
+			&:before
+				content: '“'
+				display: block
+				position: absolute
+				top: -10px
+				right: calc(100% - -10px)
+				font-size: rem(120)
+				line-height: 1
+				-webkit-text-stroke: 1px #fff
+				-webkit-text-fill-color: transparent
+
+			&:after
+				content: '“'
+				display: block
+				position: absolute
+				bottom: -10px
+				left: calc(100%)
+				font-size: rem(120)
+				line-height: 1
+				-webkit-text-stroke: 1px #fff
+				-webkit-text-fill-color: transparent
+				transform: rotate(180deg)
+
+
+		
+	&__slide
+		position: relative
+
+		&-info
+			&-cont
+				position: absolute
+				top: 0
+				left: 0
+				size: 100%
+				display: flex
+
+				.wrapper 
+					flex-direction: column
+					align-items: flex-start
+					justify-content: center
+					display: flex
+					flex: 1 1 auto
+					padding: 50px
+
+

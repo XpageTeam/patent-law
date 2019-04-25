@@ -1,7 +1,34 @@
+.main
+	.head
+		position: absolute
+		top: 0
+		left: 0
+
+	.logo
+		img
+			&:nth-child(2)
+				display: none
+
+
+.inner
+	.head
+		background: var(--main-color)
+
+		&__bot
+			padding: 20px 0
+			align-items: center
+
+			.head-menu
+				margin-top: 0
+
+	.logo
+		img
+			&:nth-child(1)
+				display: none
+
+
+
 .head
-	position: absolute
-	top: 0
-	left: 0
 	width: 100%
 	color: #fff
 	z-index: 10
