@@ -179,6 +179,83 @@
 		&.focus
 			box-shadow: none !important
 
+	&__burger
+		display: none
+
+.burger
+	z-index: 100
+	display: flex
+	justify-content: flex-end
+	align-items: center
+	box-sizing: content-box
+	size: 40px 30px
+	padding: 15px
+	background: 0 0
+	border: 0
+	user-select: none
+	margin: -15px
+	&:before 
+		display: none
+
+
+	span
+		position: relative
+		display: inline-block
+		width: 40px
+		height: 2px
+		vertical-align: bottom
+		background: #fff
+		transition: background .2s .4s
+
+		&:before
+			border-radius: 0
+			transform: none
+			content: ""
+			position: absolute
+			right: 0
+			top: 8px
+			width: 30px
+			height: 2px
+			background: #fff
+			transform-origin: 50% 50%
+			transition: top .3s .3s ease, transform .3s ease, width .3s ease
+		&:after
+			content: ""
+			position: absolute
+			right: 0
+			top: -8px
+			width: 25px
+			height: 2px
+			background: #fff
+			transform-origin: 50% 50%
+			transition: top .3s .3s ease, transform .3s ease, width .3s ease
+
+
+
+.mobile-menu--open
+
+	.burger 
+		> span
+			background: 0 0
+	.burger 
+		> span
+			&:before
+				transform: rotate3d(0,0,1,45deg)
+				top: 0
+				transition: top .3s,transform .3s .5s
+				width: 40px
+				background: #fff
+	.burger 
+		> span
+			&:after 
+				transform: rotate3d(0,0,1,-45deg)
+				top: 0
+				transition: top .3s,transform .3s .5s
+				width: 40px
+				background: #fff
+
+	.page-wr 
+		transform: translate3d(-290px,0,0)
 @media screen and (max-height: 780px)
 	
 	.head
@@ -197,3 +274,24 @@
 	
 	.head__bot
 		padding-top: 30px
+
+@media screen and (max-width: 1200px)
+	
+	.head
+		&__menu, &__top-cont
+			display: none
+
+		&__burger
+			display: block
+
+		&__logo
+			margin-right: auto
+
+		&__bot
+			overflow-y: initial
+
+
+
+
+
+
