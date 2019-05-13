@@ -1,0 +1,23 @@
+.paginator
+	margin: 30px 0 0
+
+	&__list
+		display: flex
+		justify-content: center
+
+		li
+
+			&:not(:last-child)
+				margin-right: 15px
+
+		a
+			border-radius: 50%
+			display: flex
+			justify-content: center
+			align-items: center
+			text-align: center
+			size: 35px
+
+		.active
+			color: #fff
+			background: var(--main-color)
