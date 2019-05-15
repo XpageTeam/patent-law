@@ -114,6 +114,14 @@ document.addEventListener("DOMContentLoaded", e => {
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		appendArrows: $('.partners-arrow'),
+		responsive: [
+			{
+				breakpoint: 1000,
+				settings: {
+					slidesToShow: 3
+				}
+			}
+		]
 	});
 
 	$('.advantages__list').slick({
@@ -121,6 +129,14 @@ document.addEventListener("DOMContentLoaded", e => {
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		appendArrows: $('.advantages-arrow'),
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 2
+				}
+			}
+		]
 	});
 
 	$('.standart-slider__list').slick({
@@ -131,14 +147,7 @@ document.addEventListener("DOMContentLoaded", e => {
 		appendArrows: $('.standart-slider__arrow'),
 	});
 
-	function widthAdvantage(){
-		var advantagesItemWidth =  $('.advantages__item').outerWidth();
-
-		$('.advantages__top').css({
-			"width": advantagesItemWidth,
-		})
-
-	}
+	
 
 
 
@@ -201,3 +210,11 @@ $(window).on("load scroll resize", e => {
 
 
 
+function widthAdvantage(){
+		var advantagesItemWidth =  $('.advantages__item').outerWidth();
+
+		$('.advantages__top').css({
+			"width": advantagesItemWidth,
+		})
+
+	}
