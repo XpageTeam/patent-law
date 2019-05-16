@@ -44,3 +44,22 @@
 	.services
 		&__item
 			padding: 25px
+
+@media (max-width: 1000px)
+	.services
+
+		&__item
+			padding: 20px
+
+			&-img
+				margin-bottom: 30px
+
+@media (max-width: 660px)
+	.services
+		display: block
+
+		&__item
+			width: auto
+
+			&:not(:first-child)
+				border-top: 1px solid var(--border-color)

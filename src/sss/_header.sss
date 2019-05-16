@@ -257,6 +257,15 @@
 
 	.page-wr 
 		transform: translate3d(-290px,0,0)
+
+select.head-city__select
+	background: none
+	color: #fff
+	border: none
+
+	option
+		color: #000
+
 @media screen and (max-height: 780px)
 	
 	.head
@@ -279,8 +288,6 @@
 @media screen and (max-width: 1200px)
 	
 	.head
-		&__menu, &__top-cont
-			display: none
 
 		&__burger
 			display: block
@@ -291,8 +298,99 @@
 		&__bot
 			overflow-y: initial
 
+			.head__menu
+				display: none
+		
+		&__top
+			justify-content: space-between
+
+		&__menu
+			margin-left: 20px
+	
+	.head-menu
+
+		&__link
+			padding: 0 10px !important
+
+	.head-city
+		margin-right: 20px
+
+	.mobile-menu, #content, .footer-cont
+		transition: transform .3s ease
+
+	.mobile-menu
+		position: absolute 0 * 0 100%
+		background: #fff
+		overflow-y: auto
+		overflow-x: hidden
+		width: 250px
+
+		&:after
+			content: ''
+			position: absolute
+			box-shadow: 0 0 10px rgba(0,0,0,.7)
+			top: 0
+			bottom: 0
+			left: -.1rem
+			width: .1rem
+
+		.head-menu
+			display: block
+
+			&__item
+				border-bottom: 1px solid var(--border-color)
+
+				&:before
+					display: none
+
+			&__link
+				color: #000
+				display: block
+				padding: 15px 20px !important
+				white-space: normal
+				line-height: 1.3
+
+				&:hover, &:focus
+					color: var(--main-color)
+
+		.soc
+			padding: 0 20px
+			justify-content: center
+
+	.js__menu--open
+
+		.mobile-menu,#content, .footer-cont
+			transform: translate3d(-250px, 0, 0)
 
 
 
+@media (max-width: 1000px)
+	.head
 
+		&__menu
+			display: none
 
+	.head-city
+		margin-right: auto
+
+@media (max-width: 660px)
+	.head-call
+		display: none
+
+	.head
+
+		&__top
+			align-items: center
+
+	.head-phone
+
+		span
+			display: none
+
+		a
+			display: block
+			size: 20px
+			text-indent: -9999px
+			overflow: hidden
+			background: url("../img/ico-tel.svg") center no-repeat
+			background-size: contain

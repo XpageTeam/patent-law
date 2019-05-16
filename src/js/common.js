@@ -4,6 +4,8 @@ import "selectize/dist/js/selectize.min.js"
 import "slick-carousel"
 import Swiper from "swiper/dist/js/swiper.js";
 
+import "./standart-page.js"
+
 import "./tabs.js"
 import "./forms.js"
 
@@ -37,6 +39,8 @@ document.addEventListener("DOMContentLoaded", e => {
 
 	});
 
+
+	$(".head__bot .head-menu, .soc").clone().appendTo(".mobile-menu");
 
 
 	if ($(".statistic__num").length){
@@ -107,6 +111,15 @@ document.addEventListener("DOMContentLoaded", e => {
 		slidesToShow: 2,
 		slidesToScroll: 2,
 		appendArrows: $('.law-practice-arrow'),
+		responsive: [
+			{
+				breakpoint: 660,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
 	});
 
 	$('.partners-slider').slick({
@@ -119,6 +132,12 @@ document.addEventListener("DOMContentLoaded", e => {
 				breakpoint: 1000,
 				settings: {
 					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 660,
+				settings: {
+					slidesToShow: 2
 				}
 			}
 		]
@@ -134,6 +153,12 @@ document.addEventListener("DOMContentLoaded", e => {
 				breakpoint: 1200,
 				settings: {
 					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 660,
+				settings: {
+					slidesToShow: 1
 				}
 			}
 		]

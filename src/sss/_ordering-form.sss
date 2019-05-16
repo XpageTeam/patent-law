@@ -40,8 +40,49 @@
 
 @media (max-width: 1000px)
 	.ordering-form
+		padding: 20px
 
 		.forms
 
 			&__submit
 				margin-right: 30px
+
+			&__bot
+				margin: 20px 0 0
+
+@media (max-width: 660px)
+	.ordering-form
+
+		&__title
+			font-size: 18px
+
+		&-cont
+			margin: 0
+			border-bottom: 1px solid var(--second-color)
+
+			.wrapper
+				padding: 0
+
+		.form
+
+			&-wrap
+				display: block
+				margin: 0
+
+		.forms
+
+			&__input
+
+				&-cont
+					margin-left: 0
+
+					&:not(:first-child)
+						margin: 15px 0 0 !important
+
+			&__bot
+				display: block
+				text-align: center
+
+			&__req
+				margin-right: 0
+				text-align: inherit
