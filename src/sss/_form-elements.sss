@@ -12,6 +12,26 @@
 		border-radius: 10px
 		background: var(--main-color)
 
+.forms
+	padding: 30px 65px 40px !important
+	display: none
+	width: 600px
+	max-width: 100%
+	color: #000 !important
+
+	.ordering-form__title, &__req
+		color: inherit !important
+
+	&__req
+		margin-left: 20px !important
+
+	.forms__input
+		border: 1px solid var(--border-color)
+
+		&-cont
+
+			&:not(:first-child)
+				margin: 25px 0 0
 
 .popup-form
 	display: none
@@ -610,6 +630,7 @@ div[id*="calendar_popup"]
 					display: none !important
 
 	.forms
+		padding: 30px 20px !important
 
 		&__inputs
 			display: block
@@ -636,6 +657,13 @@ div[id*="calendar_popup"]
 
 								&:not(:first-child)
 									margin: 15px 0 0 !important
+
+		&__bot
+			margin: 30px 0 0
+			display: block
+
+		&__req
+			margin: 20px 0 0 !important
 
 	.popup-form
 		width: 100%
