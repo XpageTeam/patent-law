@@ -24,6 +24,41 @@
 
 @import "_footer.sss"
 
+@media (max-width: 1200px)
+	.block_service_mini
+		width: calc(100% / 5) !important
+
 @media (max-width: 1000px)
 	.wrapper
 		padding: 0 20px
+
+	.block_service_mini
+		width: calc(100% / 4) !important
+
+@media (max-width: 800px)
+	.block_service_mini
+		width: calc(100% / 3) !important
+
+@media (max-width: 660px)
+	.block_service_mini
+		width: calc(100% / 2) !important
+
+	.search-page
+		margin-bottom: 35px !important
+
+		form
+			display: flex
+
+			.inp
+				width: calc(100% - 90px)
+
+			.submit
+				flex: none
+				width: 90px
+
+	.news-item a
+		font-size: 18px !important
+
+@media (max-width: 400px)
+	.block_service_mini
+		width: 100% !important

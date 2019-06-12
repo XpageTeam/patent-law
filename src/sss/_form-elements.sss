@@ -348,6 +348,49 @@ div[id*="calendar_popup"]
 			position: relative
 			justify-content: flex-end
 
+			.select
+
+				~ label
+					display: none
+
+				select, .selectize-control
+					border: 1px solid transparent
+					padding: 16px 10px 13px 18px
+					height: 67px
+					transition: border-color .3s ease, background-color .3s ease
+					width: 100%
+					background-position: right 26px center 
+					background-repeat: no-repeat
+
+				.selectize
+
+					&-control
+						padding: 0 !important
+						border: none !important
+
+					&-input
+						height: 100%
+						border-radius: 0 !important
+						display: flex
+						flex-direction: column
+						justify-content: center
+						padding-left: 23px
+						padding-right: 30px
+
+						input
+
+							&::-webkit-input-placeholder
+								color: #000
+
+							&:-moz-placeholder
+								color: #000
+
+							&::-moz-placeholder
+								color: #000
+
+							&:-ms-input-placeholder
+								color: #000
+
 			&.forms__checkbox-cont
 				display: flex 
 				flex-wrap: wrap
