@@ -109,6 +109,8 @@ document.addEventListener("DOMContentLoaded", e => {
 	$('.law-practice__slider').slick({
 		infinite: true,
 		slidesToShow: 2,
+		autoplay: true,
+		autoplaySpeed: 5000,
 		slidesToScroll: 2,
 		appendArrows: $('.law-practice-arrow'),
 		responsive: [
@@ -125,6 +127,8 @@ document.addEventListener("DOMContentLoaded", e => {
 	$('.partners-slider').slick({
 		infinite: true,
 		slidesToShow: 4,
+		autoplay: true,
+		autoplaySpeed: 3000,
 		slidesToScroll: 1,
 		appendArrows: $('.partners-arrow'),
 		responsive: [
