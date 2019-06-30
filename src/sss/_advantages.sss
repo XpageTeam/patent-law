@@ -21,8 +21,23 @@
 		font-size: rem(24)
 		margin-bottom: 50px
 
+	
+	&__list
+		padding: 45px 0 0
 
+		.slick
 
+			&-arrow
+				position: absolute
+				top: -20px
+
+			&-next
+				right: 0
+
+			&-prev
+				right: 45px
+				left: auto
+				transform: rotateY(180deg)
 
 	&__item
 		border: 1px solid var(--second-color)
@@ -46,7 +61,6 @@
 	.slick
 		&-list
 			margin: 0 -25px
-			overflow: visible
 
 		&-slide
 			margin: 0 25px

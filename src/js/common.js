@@ -148,10 +148,8 @@ document.addEventListener("DOMContentLoaded", e => {
 	});
 
 	$('.advantages__list').slick({
-		infinite: true,
 		slidesToShow: 3,
-		slidesToScroll: 1,
-		appendArrows: $('.advantages-arrow'),
+		// appendArrows: $('.advantages-arrow'),
 		responsive: [
 			{
 				breakpoint: 1200,
