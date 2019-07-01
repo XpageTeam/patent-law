@@ -150,6 +150,8 @@ document.addEventListener("DOMContentLoaded", e => {
 	$('.advantages__list').slick({
 		slidesToShow: 3,
 		// appendArrows: $('.advantages-arrow'),
+		autoplay: true,
+		autoplaySpeed: 4000,
 		responsive: [
 			{
 				breakpoint: 1200,
