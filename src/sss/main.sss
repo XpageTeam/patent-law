@@ -24,6 +24,16 @@
 
 @import "_footer.sss"
 
+.messenger
+	position: fixed
+	bottom: 20px
+	right: 20px
+	z-index: 100
+
+	a
+		text-decoration: none
+		border: 0
+
 @media (max-width: 1200px)
 	.block_service_mini
 		width: calc(100% / 5) !important
@@ -38,6 +48,12 @@
 @media (max-width: 800px)
 	.block_service_mini
 		width: calc(100% / 3) !important
+
+@media (min-width: 660px)
+	
+	.messenger
+		display: none
+
 
 @media (max-width: 660px)
 	.block_service_mini
