@@ -24,6 +24,21 @@
 
 @import "_footer.sss"
 
+.filter-events
+	margin-bottom: 30px
+
+.filter
+	&-top
+		display: flex
+		align-items: flex-end
+
+	&-btn
+		.btn
+			padding: 8px 26px
+
+
+
+
 .messenger
 	position: fixed
 	bottom: 20px
@@ -54,8 +69,40 @@
 	.messenger
 		display: none
 
+	.filter-select
+		display: flex
+
+		&__item
+			width: 150px
+			margin-right: 30px
+
+			select
+				&:not(.selectized)
+					opacity: 0
+
 
 @media (max-width: 660px)
+	
+	.filter-top
+		flex-direction: column
+		align-items: flex-start
+
+	.filter-select
+		width: 100%
+		margin-bottom: 20px
+
+		&__item
+
+			&:not(:last-child)
+				margin-bottom: 20px
+
+		select
+			height: 40px
+			padding: 0 20px
+			width: 100%
+			background: url("../img/ico-select-arrow-black.svg") right 15px center no-repeat, #f8f8f8
+
+
 	.block_service_mini
 		width: calc(100% / 2) !important
 

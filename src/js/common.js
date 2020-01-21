@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", e => {
 	});
 
 
-	$(".head__bot .head-menu, .soc").clone().appendTo(".mobile-menu");
+	$(".head__bot .head-menu, .head__top .head-menu, .soc ").clone().appendTo(".mobile-menu");
 
 
 	if ($(".statistic__num").length){

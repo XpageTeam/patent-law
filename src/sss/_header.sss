@@ -25,8 +25,30 @@
 		img
 			&:nth-child(1)
 				display: none
+.head-menu__item
+	&:hover
+		> 
+			.submenu
+				opacity: 1
+				pointer-events: all
+.submenu
+	position: absolute
+	top: 100%
+	left: 0
+	opacity: 0
+	pointer-events: none
+	background-color: var(--main-color)
+	padding: 10px 0
+	transition: opacity .3s ease
+	z-index: 10
+	box-shadow: 5px 9px 21px 1px #0a1433
 
+	.head-menu__link
+		display: block
+		padding: 10px 20px !important
 
+		&:hover
+			background-color: #152146
 
 .head
 	width: 100%
@@ -290,6 +312,23 @@ select.head-city__select
 		padding-top: 30px
 
 @media screen and (max-width: 1200px)
+
+	.mobile-menu
+		.submenu
+			position: static
+			opacity: 1
+			pointer-events: all
+			background-color: #fff
+			padding: 0
+			box-shadow: none
+
+			.head-menu__item
+				&:last-child
+					border: 0
+
+		.head-menu__link.no-links
+			border-bottom: 1px solid var(--border-color)
+
 	
 	.head
 
@@ -361,7 +400,7 @@ select.head-city__select
 					color: var(--main-color)
 
 		.soc
-			padding: 0 20px
+			padding: 15px 20px
 			justify-content: center
 
 	.js__menu--open

@@ -21523,7 +21523,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
 		}
 	});
 
-	(0, _jquery2.default)(".head__bot .head-menu, .soc").clone().appendTo(".mobile-menu");
+	(0, _jquery2.default)(".head__bot .head-menu, .head__top .head-menu, .soc ").clone().appendTo(".mobile-menu");
 
 	if ((0, _jquery2.default)(".statistic__num").length) {
 		(0, _jquery2.default)(".statistic__num").countTo();
