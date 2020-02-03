@@ -50,6 +50,12 @@
 		&:hover
 			background-color: #152146
 
+.head__bot
+	.head-menu__item
+		&:last-child
+			.submenu
+				left: auto
+				right: 0
 .head
 	width: 100%
 	color: #fff
@@ -67,6 +73,7 @@
 
 	&-call
 		margin-left: 12px
+
 		a 
 			color: #D5D5D5
 			font-size: rem(13)
@@ -78,9 +85,15 @@
 			margin-right: 13px
 			fill: var(--second-color)
 
+		.phote-text
+			font-size: rem(9)
+			font-weight: 500
+			letter-spacing: 0.06em
+			color: #D5D5D5
 
-		a 
-			font-size: rem(12)
+
+		a
+			font-size: rem(13)
 			font-weight: 500
 			letter-spacing: 0.06em
 			color: #D5D5D5
@@ -111,7 +124,6 @@
 		position: relative
 		display: flex
 		padding-top: 50px
-		overflow-y: hidden
 
 		.head
 			&-menu
@@ -419,6 +431,13 @@ select.head-city__select
 	.head-city
 		margin-right: auto
 
+	.head-phone
+		display: flex
+		align-items: center
+
+	.phote-text
+		margin-left: 20px
+
 @media (max-width: 660px)
 	.head-call
 		display: none
@@ -436,8 +455,16 @@ select.head-city__select
 		a
 			display: block
 			padding-left: 30px
-			// size: 20px
-			// text-indent: -9999px
-			// overflow: hidden
 			background: url("../img/ico-tel.svg") left 0 center no-repeat
-			// background-size: contain
+
+@media (max-width: 370px)
+	
+	.head-phone
+		a
+			padding-left: 20px
+
+		.phote-text
+			font-size: 7px
+
+	.phote-text
+		margin-left: 10px

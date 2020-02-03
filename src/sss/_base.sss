@@ -127,9 +127,10 @@ a
 	&:not([class])
 		color: var(--main-color)
 		border-bottom: 1px solid currentColor
+		transition: border-color .3s ease
 
 		&:hover, &:focus
-			border-color: transparent
+			border-color: var(--second-color)
 
 .wrapper
 	max-width: var(--base-width)

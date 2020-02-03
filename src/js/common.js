@@ -147,6 +147,23 @@ document.addEventListener("DOMContentLoaded", e => {
 		]
 	});
 
+	$('.diploms-slider').slick({
+		infinite: true,
+		slidesToShow: 3,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		slidesToScroll: 1,
+		appendArrows: $('.diploms-slider__arrow'),
+		responsive: [
+			{
+				breakpoint: 660,
+				settings: {
+					slidesToShow: 2
+				}
+			}
+		]
+	});
+
 	$('.advantages__list').slick({
 		slidesToShow: 3,
 		// appendArrows: $('.advantages-arrow'),

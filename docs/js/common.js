@@ -21613,6 +21613,21 @@ document.addEventListener("DOMContentLoaded", function (e) {
 		}]
 	});
 
+	(0, _jquery2.default)('.diploms-slider').slick({
+		infinite: true,
+		slidesToShow: 3,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		slidesToScroll: 1,
+		appendArrows: (0, _jquery2.default)('.diploms-slider__arrow'),
+		responsive: [{
+			breakpoint: 660,
+			settings: {
+				slidesToShow: 2
+			}
+		}]
+	});
+
 	(0, _jquery2.default)('.advantages__list').slick({
 		slidesToShow: 3,
 		// appendArrows: $('.advantages-arrow'),
