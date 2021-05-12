@@ -69,6 +69,6 @@
     "imask": "^4.1.5",
     "is_js": "^0.9.0",
     "slick-carousel": "^1.8.1",
-    "swiper": "^4.4.6"
+    "swiper": "^6.5.1"
   }
 }
